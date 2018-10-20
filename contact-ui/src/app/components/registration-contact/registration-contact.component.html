@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="text-right">
+    <a class="btn btn-primary" routerLink="/">Back to List</a>
+  </div>
+  <form [formGroup]="contactform" (ngSubmit)="createContact()" novalidate>
+    <div *ngIf="formMessage != ''">
+        <h2 class="has-info">{{formMessage}}</h2>
+    </div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" formControlName="firstName" required autofocus>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" formControlName="lastName" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" formControlName="email" required>
+    </div>
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </form>
+</div>
