@@ -38,6 +38,7 @@ testem.log
 .DS_Store
 Thumbs.db
 target
+node_modules
 
 /target/
 !.mvn/wrapper/maven-wrapper.jar
