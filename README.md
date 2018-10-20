@@ -14,17 +14,17 @@ This module contains the ui project using Angular 6.
 * Maven 3.2+
 
 ## Installation
-In the contact project:
+Within the contact project:
 `$ mvn package`
 
-In the contact-ui project:
+Within the contact-ui project:
 `$ npm install`
 
 ## Usage 
-In the contact project:
+Within the contact project:
 `java -jar target/contact-0.0.1-SNAPSHOT.jar`
 
-In the contact-ui project:
+Within the contact-ui project:
 `$ npm start`
 
 ## Usage example 
