@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="text-right">
+    <a class="btn btn-primary" routerLink="/registration">Create a Contact</a>
+  </div>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td><a [routerLink]="['view', contact.id]">{{contact.firstName}}</a></td>
+        <td>{{contact.lastName}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.phoneNumber}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
